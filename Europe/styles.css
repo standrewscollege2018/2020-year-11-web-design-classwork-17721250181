@@ -1,0 +1,114 @@
+/*stylesheet*/
+
+/*Set all padding and margin to 0*/
+*{
+  padding:0px;
+  margin:0px;
+}
+
+.title{
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(255,50,75)
+}
+
+.body-container-index{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 40px;
+  margin-top:15px;
+}
+
+.body-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.card{
+  border: 5px solid #c9072a;
+  border-left: 5px solid #001c69;
+  border-right: 5px solid #001c69;
+  border-radius: 25px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.card > img{
+  max-width: 100%;
+  height: auto;
+}
+
+.card > h2{
+  font-size: 25px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.card > p{
+  padding: 10px;
+}
+
+.countries-list{
+  padding:5px;
+  min-width: 300px;
+}
+
+.countries-list > h3{
+  font-size: 25px;
+  margin: 5px;
+}
+
+.information{
+  padding:5px;
+}
+
+.information > h2{
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+@font-face {
+  font-family: GreatVibes;
+  src: url(fonts/GreatVibes-Regular.ttf);
+}
+
+body{
+  background-color: #fffbf5;
+  font-family: GreatVibes,sans-serif;
+}
+
+h1{
+  padding: 2px 0 2px 0;
+  margin: 5px 0 2px 20px;
+}
+
+h2{
+  margin: 5px 0 2px 10px;
+}
+
+ul{
+  margin: 5px 0 5px 15px;
+  list-style-type: none;
+}
+
+li{
+  margin: 3px 0 3px 0;
+}
+
+p{
+  font-family: sans-serif;
+  line-height: 25px;
+  margin: 3px 1px 3px 10px;
+}
+
+a{
+  font-family: fantasy,sans-serif;
+  color: rgb(180, 210, 240);
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: rgb(255,200,255);
+}

@@ -1,0 +1,31 @@
+/* stylesheet */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.banner > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner > p {
+  font-size: 25px;
+}
+
+.body-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* text-align: center; */
+}
+
+.left > img {
+  min-width: 100%;
+  height: auto;
+}
