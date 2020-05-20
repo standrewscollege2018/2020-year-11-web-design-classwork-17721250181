@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #ff8080;
+  padding: 25px 20px 25px 20px;
+}
+
+.tutorclass > h2{
+  font-size: 30px;
+  font-family: serif;
+}
+
+.tutorteacher{
+  text-align: right;
+}
+
+.body-container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 15px;
+  margin: 10px;
+  padding-top: 1px;
+}
+
+.cards-left{
+  border: dotted rgb(100,100,100);
+  border-radius: 20px;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  background-color: #123456;
+  color: #ffffff;
+}
+
+.cards-left > img{
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.cards-right{
+  border: dotted rgb(100,100,100);
+  border-radius: 20px;
+  padding: 30px 0 30px 0;
+  text-align: left;
+  background-color: #123456;
+  color: #ffffff;
+}
+
+.cards-right > p{
+  padding-left: 50px;
+}
+
+.cards-right > h6{
+  padding-left: 50px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.cards-right > ul{
+  padding-left: 70px;
+}
+
+.link{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #32158a;
+  font-family: fantasy;
+  font-size: 15px;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #e434ed;
+  font-size: 20px;
+}

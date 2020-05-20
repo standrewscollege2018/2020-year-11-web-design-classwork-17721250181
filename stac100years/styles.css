@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+.background{
+  display: grid;
+  grid-template-columns: 2.5% auto 2.5%;
+  background-color: #ffffff;
+}
+
+.leftbule{
+  background-color: #365d84;
+}
+.rightblue{
+  background-color: #365d84;
+}
+
 .banner{
   display: grid;
   grid-template-columns: 1fr;
@@ -17,15 +30,27 @@
 
 .banner > p {
   font-size: 25px;
+  padding: 10px 0 5px 0;
 }
 
 .body-container{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin: 10px 10% 5px 10%;
   /* text-align: center; */
 }
 
+.left{
+  /* padding-left: 15%; */
+}
+
+.left > p {
+  color: #38566c;
+  margin: 5px;
+  line-height: 20px;
+}
+
 .left > img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
