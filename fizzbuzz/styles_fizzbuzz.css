@@ -1,0 +1,23 @@
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+p{
+  margin: 1px 10% 1px 10%;
+}
+
+.fizzbuzz{
+  background-color: #cfdbfa;
+  color: #2bb385;
+  text-align: center;
+}
+
+.fizz{
+  background-color: #facfea;
+  text-align: right;
+}
+
+.buzz{
+  font-size: 30px;
+}
