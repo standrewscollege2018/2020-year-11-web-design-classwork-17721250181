@@ -6,13 +6,15 @@
   </head>
   <body>
     <?php
+    //relocate
+    if(!isset($_POST['name']))header('Location: serch.php');
     // get the firstname
     $firstname_serch = trim($_POST['name']);
     echo "$firstname_serch";
     //connect to database
     $db_connect = mysqli_connect("localhost","root","","studentdb");
     // create Query
-    $student_sql = "SELECT student.studentID, student.firstname, student.lastname, tutorgroup.name FROM student JOIN tutorgroup ON student.tutorgroupID = tutorgroup.tutorgroupID WHERE student.firstname=$firstname_serch";
+    $student_sql = "SELECT student.studentID, student.firstname, student.lastname, tutorgroup.name FROM student JOIN tutorgroup ON student.tutorgroupID = tutorgroup.tutorgroupID WHERE student.firstname='$firstname_serch'";
     // run Query
     $student_qry = mysqli_query($db_connect,$student_sql);
     // store result to array
