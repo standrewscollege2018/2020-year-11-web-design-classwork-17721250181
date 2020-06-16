@@ -13,15 +13,25 @@
     $firstname_serch = trim($_POST['name']);
     //connect to database
     $db_connect = mysqli_connect("localhost","root","","studentdb");
+    //check if connect is correct
+    if(mysqli_connect_errno()) echo "Connection Error" . mysqli_connect_errno();
     // create Query
     $student_sql = "SELECT student.studentID, student.firstname, student.lastname, tutorgroup.name FROM student JOIN tutorgroup ON student.tutorgroupID = tutorgroup.tutorgroupID WHERE student.firstname LIKE '%$firstname_serch%'";
-    // run Query
+    /*
+    run Query
     $student_qry = mysqli_query($db_connect,$student_sql);
-    // store result to array
+    store result to array
     $student_aa = mysqli_fetch_assoc($student_qry);
-
-    //output the name
-    echo 'StudentID: '.$student_aa['studentID'].'<p></p>Name(Firstname-Lastname): '.$student_aa['firstname'].' '.$student_aa['lastname'].'<p></p>Turotgroup:'.$student_aa['name'];
+    */
+    //run Query
+    if($student_qry = mysqli_query($db_connect,$student_sql))
+    {
+      if(mysqli_num_rows($student_qry)){
+        //outtput name
+        while($student_aa = mysqli_fetch_assoc($student_qry)) echo '<p>StudentID: '.$student_aa['studentID'].'  Name: '.$student_aa['firstname'].' '.$student_aa['lastname'].'  Turotgroup:'.$student_aa['name'].'</p>';
+      }
+      else echo "<h2>No student named $firstname_serch was found</h2>";
+    }
     ?>
 
      <form action="serch.php" method="post">

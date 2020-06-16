@@ -1,0 +1,30 @@
+h1{
+  margin: 10px 0 10px 0;
+  color: #0f6b0f;
+}
+
+p{
+  margin: 10px 0 10px 0;
+}
+
+*{
+  margin: 0;
+  border: 0;
+  background-color: #d4e8ff;
+}
+
+
+a{
+  text-decoration: none;
+  color: #fe0302;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: #fe0303;
+}
+
+.all-container{
+  display: grid;
+  text-align: center;
+}
