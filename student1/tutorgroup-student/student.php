@@ -6,6 +6,7 @@
     <title>Students</title>
   </head>
   <body>
+    <div class="all_container">
     <?php
     //check is the $get array seted
     if(!isset($_GET['tutor_group_ID']))header('Location: tutorgroup.php');
@@ -26,14 +27,16 @@
       if(mysqli_num_rows($student_qry)){
         //do Query
         while($student_aa = mysqli_fetch_assoc($student_qry)){
+          echo '<div class="student_info_card">';
           echo '<p>StudentID:'.$student_aa['studentID'];
-          echo '&nbsp &nbsp Name:'.$student_aa['firstname'].' '.$student_aa['lastname'].'</p>';
+          echo '&nbsp &nbsp Name:'.$student_aa['firstname'].' '.$student_aa['lastname'].'<p></p>';
+          echo "<img src='img/".$student_aa['image']."'class='image-resize'></p>";
           }
       }
       else echo "<h2>No student is in this tutorgroup</h2>";
     }
 
-
-     ?>
+    ?>
+    </div>
   </body>
 </html>

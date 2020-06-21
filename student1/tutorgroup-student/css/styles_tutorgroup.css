@@ -1,5 +1,7 @@
 h1{
   margin: 10px 0 10px 0;
+  font-size: 50px;
+  font-family: fantasy,sans-serif;
   color: #0f6b0f;
 }
 
@@ -27,4 +29,10 @@ a:hover{
 .all-container{
   display: grid;
   text-align: center;
+}
+
+.tutor_group_name{
+  display: grid;
+  font-size: 120%;
+  width: auto;
 }

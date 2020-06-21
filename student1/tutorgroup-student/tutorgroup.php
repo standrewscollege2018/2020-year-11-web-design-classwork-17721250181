@@ -21,11 +21,11 @@
       {
         //do the query
         while($student_aa = mysqli_fetch_assoc($student_qry)){
-          echo '<p><a href="student.php?tutor_group_ID='.$student_aa['tutorgroupID'].'">'.$student_aa['name'].' </a></p>';
+          echo '<div class="tutor_group_name"><p><a href="student.php?tutor_group_ID='.$student_aa['tutorgroupID'].'">'.$student_aa['name'].' </a></p></div>';
         }
       }
       ?>
-
+      <!-- <div class="tutor_group_name"><p><a href="student.php?tutor_group_ID=1">TEST </a></p></div> -->
     </div>
   </body>
 </html>
